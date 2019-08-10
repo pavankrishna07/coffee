@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int price,dis,pd=0,totalsum=0;
+    
+    scanf("%d%d",&price,&dis);
+    
+  while(price>=0)
+  {
+      pd=(price *dis)/100;
+     totalsum= totalsum+price;
+     price = price - pd;
+    
+  }
+   printf("%d",totalsum);
+   
+    return 0;
+}
